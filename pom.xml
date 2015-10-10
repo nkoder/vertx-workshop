@@ -11,7 +11,7 @@
     <name>Vert.x 3 Workshop</name>
 
     <properties>
-        <vertx.version>3.1.0-SNAPSHOT</vertx.version>
+        <vertx.version>3.1.0</vertx.version>
     </properties>
 
     <dependencies>
