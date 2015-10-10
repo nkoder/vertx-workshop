@@ -14,6 +14,12 @@ blocking time limit
 If we need to do sth that blocks thread for longer time (like 2 seconds and more)
 then it's preferable to use "workers".
 
+event bus
+---------
+
+It's possible to have many servers and even separate webclient connected to same vent bus.
+It means that it is possible to communicate webclient with server without REST API, using only event bus.
+
 logger
 ------
 
