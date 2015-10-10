@@ -10,7 +10,7 @@ public class Starter extends AbstractVerticle {
     private static Logger LOG = LoggerFactory.getLogger(Starter.class);
 
     public static void main(String [] args) {
-        LOG.info("info");
+        LOG.info("main");
         Vertx.vertx().deployVerticle(Starter.class.getName());
     }
 
