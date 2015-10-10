@@ -97,7 +97,7 @@
                         <!-- MainClass in mainfest make a executable jar -->
                         <archive>
                             <manifest>
-                                <mainClass>io.vertx.workshop.boot.Starter</mainClass>
+                                <mainClass>io.vertx.workshop.boot._01_helloWorld.Main_01_helloWorld</mainClass>
                             </manifest>
                         </archive>
 

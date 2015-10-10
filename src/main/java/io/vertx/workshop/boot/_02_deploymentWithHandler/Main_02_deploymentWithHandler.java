@@ -1,4 +1,4 @@
-package io.vertx.workshop.boot;
+package io.vertx.workshop.boot._02_deploymentWithHandler;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
@@ -11,17 +11,17 @@ import java.util.Random;
 
 import static java.lang.String.format;
 
-public class Starter extends AbstractVerticle {
+public class Main_02_deploymentWithHandler extends AbstractVerticle {
 
     private static final String SOME_KEY = "someKey";
 
-    private static Logger LOG = LoggerFactory.getLogger(Starter.class);
+    private static Logger LOG = LoggerFactory.getLogger(Main_02_deploymentWithHandler.class);
 
     public static void main(String[] args) {
         LOG.info("main");
         JsonObject config = new JsonObject().put(SOME_KEY, 123);
         Vertx.vertx().deployVerticle(
-            Starter.class.getName(),
+            Main_02_deploymentWithHandler.class.getName(),
             new DeploymentOptions()
                 .setInstances(5)
                 .setConfig(config),
